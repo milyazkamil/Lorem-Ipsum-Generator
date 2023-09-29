@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+  --bg-color: #F8FAFC;
+  --bg-input: #CBD5E1;
+  --bg-btn: #10B981;
+  --bg-btn-hover: #047857;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-btn);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: var(--bg-color);
+
+}
+
+#main-container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#main-container > #form-container > #form > #amount {
+  background-color: var(--bg-input);
+}
+
+#main-container > #form-container > #form > #generate-btn {
+  background-color: var(--bg-btn);
+  transition: all 0.3s ease;
+  color: var(--white);
+}
+
+#main-container > #form-container > #form > #generate-btn:hover {
+  background-color: var(--bg-btn-hover);
+}
+
+#main-container > #paragraphs-container > .single-paragraph > .paragraph-index {
+  color: #10B981;
+  font-family: 'Croissant One', cursive;
+}
